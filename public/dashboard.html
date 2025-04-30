@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NeoBank - Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark-mode">
+  <!-- Botão fixo no canto superior direito -->
+  <button class="toggle-theme" onclick="toggleTheme()">🌓</button>
+
+  <div class="sidebar">
+    <h2>NeoBank</h2>
+    <ul>
+      <li onclick="showSection('home')">🏠 Início</li>
+      <li onclick="showSection('pix')">⚡ Pix</li>
+      <li onclick="showSection('deposit')">💰 Depósito</li>
+      <li onclick="showSection('withdraw')">🏧 Saque</li>
+      <li onclick="showSection('extract')">📜 Extrato</li>
+      <li onclick="logout()">🚪 Sair</li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <div id="home" class="section active">
+      <h1>Bem-vindo, <span id="user-name"></span></h1>
+      <p>Saldo atual: R$ <span id="saldo">0.00</span></p>
+    </div>
+    <div id="pix" class="section">
+      <h2>Transferir via Pix</h2>
+      <input type="email" id="pix-dest" placeholder="Email do destinatário" />
+      <input type="number" id="pix-value" placeholder="Valor" />
+      <button onclick="pix()">Enviar Pix</button>
+    </div>
+    <div id="deposit" class="section">
+      <h2>Depositar</h2>
+      <input type="number" id="deposit-value" placeholder="Valor do depósito" />
+      <button onclick="depositar()">Depositar</button>
+    </div>
+    <div id="withdraw" class="section">
+      <h2>Sacar</h2>
+      <input type="number" id="withdraw-value" placeholder="Valor do saque" />
+      <button onclick="sacar()">Sacar</button>
+    </div>
+    <div id="extract" class="section">
+      <h2>Extrato de Transações</h2>
+      <ul id="extrato-list"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

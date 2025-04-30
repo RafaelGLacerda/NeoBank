@@ -1,0 +1,38 @@
+[
+  {
+    "nome": "Usuário",
+    "email": "rafaellacerda2004@gmail.com",
+    "senha": "rafael12",
+    "saldo": 1100,
+    "transacoes": [
+      {
+        "tipo": "Depósito",
+        "valor": 1000,
+        "data": "4/30/2025, 3:16:33 PM"
+      },
+      {
+        "tipo": "Recebido Pix",
+        "valor": 100,
+        "data": "4/30/2025, 3:18:03 PM"
+      }
+    ]
+  },
+  {
+    "nome": "Usuário",
+    "email": "nosenselolclips@gmail.com",
+    "senha": "rafael12",
+    "saldo": 400,
+    "transacoes": [
+      {
+        "tipo": "Depósito",
+        "valor": 500,
+        "data": "4/30/2025, 3:17:45 PM"
+      },
+      {
+        "tipo": "Envio Pix",
+        "valor": -100,
+        "data": "4/30/2025, 3:18:03 PM"
+      }
+    ]
+  }
+]
