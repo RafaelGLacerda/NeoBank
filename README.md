@@ -1,38 +1,28 @@
-# 🌐 [NeoBank - Acesse aqui](https://neobank-evh5.onrender.com/)
+## 🏦 NeoBank
 
-NeoBank é um banco virtual fictício inspirado no PicPay, com interface moderna, modo claro/escuro, e funcionalidades completas para gerenciamento financeiro. Desenvolvido com Node.js, Express e persistência de dados via JSON.
+**NeoBank** é um banco virtual fictício inspirado no PicPay, com uma interface moderna, suporte a modo claro/escuro e funcionalidades completas para gerenciamento financeiro.
 
----
-
-## 🚀 Funcionalidades
-
-- 👤 Cadastro de usuários (nome, email, senha)
-- 🔐 Login seguro
-- 💰 Saldo em conta
-- 📥 Depósito de dinheiro
-- 📤 Saque de dinheiro
-- ⚡ Transferência entre usuários via Pix
-- 📜 Extrato de transações
-- 🌓 Tema claro/escuro com botão flutuante
-- 💾 Dados persistidos em `users.json`
-- 💻 Interface responsiva e otimizada para 1920x1080
+Desenvolvido com **Node.js**, **Express** e persistência de dados utilizando **JSON**.
 
 ---
 
-## 🛠️ Tecnologias
+### 🌐 Acesse o projeto online
 
-- Node.js
-- Express
-- HTML5, CSS3, JavaScript
-- JSON para armazenamento
-- Render (Deploy)
+🔗 [NeoBank - Acesse aqui](https://neobank-evh5.onrender.com/)
 
 ---
 
-## 📦 Instalação local
+## 🚀 Como rodar o projeto localmente
 
 ```bash
+# Clone o repositório
 git clone https://github.com/seu-usuario/neobank.git
+
+# Acesse a pasta do projeto
 cd neobank
+
+# Instale as dependências
 npm install
+
+# Inicie o servidor
 node server.js
