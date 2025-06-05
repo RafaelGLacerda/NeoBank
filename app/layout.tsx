@@ -7,7 +7,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "NeoBank - Seu Banco Digital",
+  title: "NeoBank",
   description: "O banco digital do futuro com PIX, cartões virtuais e muito mais",
     generator: 'v0.dev'
 }
@@ -19,6 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR" suppressHydrationWarning>
+      <link rel="icon" href="/icone5.png" type="image/png" />
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
